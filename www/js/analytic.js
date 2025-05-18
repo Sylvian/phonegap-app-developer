@@ -81,10 +81,10 @@
 
     function getVersion() {
         var versionStringSplit = $('#version').html().split(':');
-        if( versionStringSplit.length >= 1) {
-            return '0.0.0'
-        } else {
+        if (versionStringSplit.length > 1) {
             return versionStringSplit[1].trim().split('<')[0];
+        } else {
+            return '0.0.0';
         }
     };
 })();
